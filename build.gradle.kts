@@ -36,6 +36,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
+    // Validation
+    implementation("org.hibernate.validator:hibernate-validator:7.0.5.Final")
+    implementation("org.glassfish:jakarta.el:4.0.2")
+
+
     // QuertDSL
     implementation("com.querydsl:querydsl-jpa:5.0.0")
     kapt("com.querydsl:querydsl-apt:5.0.0:jpa")
