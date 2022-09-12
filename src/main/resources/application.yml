@@ -15,3 +15,19 @@ spring:
     console:
       enabled: true
       path: '/h2-console'
+
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+  signing-key: "MaYzkSjmkzPC57L"
+  encoding-strength: 256
+  security-realm: "AuthenticationService JWT Realm"
+  jwt:
+    client-id: "authenticationjwtclient"
+    client-secret: "XY7kmzoNzl100"
+    grant-type: "password"
+    scope-read: "read"
+    scope-write: "write"
+    resource-ids: "testjwtresourceid"

@@ -36,15 +36,26 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
+    // Guava
+    implementation("com.google.guava:guava:31.1-jre")
+
     // Validation
     implementation("org.hibernate.validator:hibernate-validator:7.0.5.Final")
     implementation("org.glassfish:jakarta.el:4.0.2")
 
+    // Swagger
+    implementation("org.springdoc:springdoc-openapi-ui:1.6.9")
 
     // QuertDSL
     implementation("com.querydsl:querydsl-jpa:5.0.0")
     kapt("com.querydsl:querydsl-apt:5.0.0:jpa")
     kapt("org.springframework.boot:spring-boot-configuration-processor")
+
+    // Security
+    implementation("org.springframework.security:spring-security-crypto:5.7.3")
+    implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+    implementation("io.jsonwebtoken:jjwt-impl:0.11.5")
+    implementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
     runtimeOnly("com.h2database:h2")
 
