@@ -9,7 +9,7 @@ import com.ribo.osori.member.exception.LoginFailedException
 import org.springframework.security.crypto.password.PasswordEncoder
 import javax.persistence.*
 
-
+@Entity
 class Member(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private var id: Long,
