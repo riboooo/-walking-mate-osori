@@ -12,7 +12,7 @@ import javax.persistence.*
 @Entity
 class Member(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private var id: Long,
+    private var id: Long?,
 
     @Embedded
     private val email: Email,
